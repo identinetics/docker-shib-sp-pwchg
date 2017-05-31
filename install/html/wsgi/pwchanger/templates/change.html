@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <header>
+        </header>
+
+        <div class="content">
+            <div class="column one">
+                <img src="static/idplogo.png" alt="logo" style="padding-left: 15%;">
+                {% if error is none %}
+                {% else %}
+                <section><p class="form-element form-error">{{ error }}</p></section>
+                {% endif %}
+
+                <form action="" method="post">
+
+                    <legend>
+                        Bitte zum Passwortwechsel:
+                    </legend>
+                    <legend>Das alte Passwort angeben:</legend>
+                    <div class="form-element-wrapper">
+                        <input class="form-element form-field" id="oldpassword" name="j_oldpassword" type="password" placeholder="Altes Passwort" value="">
+                    </div>
+
+                    <legend>Das neue Passwort zwei mal angeben:</legend>
+                    <div class="form-element-wrapper">
+                        <input class="form-element form-field" id="password1" name="j_password1" type="password" placeholder="Neues Passwort" value="">
+                    </div>
+
+                    <div class="form-element-wrapper">
+                        <input class="form-element form-field" id="password2" name="j_password2" type="password" placeholder="Neues Passwort wiederholen" value="">
+                    </div>
+
+                    <input type="hidden" id="csrf_token" name="csrf_token" value="{{csrf_token}}">
+
+                    <div class="form-element-wrapper">
+                        <button class="form-element form-button" type="submit" name="_eventId_proceed">Passwort ändern</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="column two"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+= BMB Edushare SAML Test Föderation (SP4)
+
+[width="100%", cols="15,25"]
+|===
+|Passwortwechsel | https://sp4.test.edu.portalverbund.at/secure/wsgi/pwchanger.wsgi/change.html
+|Status Abfrage| https://sp4.test.edu.portalverbund.at/Shibboleth.sso/Status
+|===
+
+//++++
+//<img src="images/logo.png" style="display: block; margin-top: 3.5em; margin-left: auto; margin-right: auto; width: 200px;">
+//++++
