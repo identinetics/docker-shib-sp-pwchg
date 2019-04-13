@@ -5,7 +5,8 @@ dnspython3
 docutils
 doxypy
 imagesize
-Jinja2
+# vulnerability reported in Jinja2 2.10.1
+Jinja2<=2.10
 ldap3
 Lumpy
 MarkupSafe
